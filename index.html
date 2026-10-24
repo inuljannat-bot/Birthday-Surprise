@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8dce5">
+
+  <title>For My Love ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Hearts -->
+  <div class="hearts" id="hearts"></div>
+
+  <!-- Welcome Screen -->
+  <section class="welcome" id="welcome">
+    <div class="welcome-card">
+      <div class="envelope">💌</div>
+
+      <p class="small-title">A LITTLE SURPRISE FOR YOU</p>
+
+      <h1>Hey, My Love</h1>
+
+      <p class="welcome-text">
+        I made something special just for you...
+      </p>
+
+      <button class="main-btn" id="openBtn">
+        Open Your Gift <span>♡</span>
+      </button>
+
+      <p class="bottom-note">Made with all my love ❤️</p>
+    </div>
+  </section>
+
+  <!-- Main Website -->
+  <main id="mainContent" class="hidden">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">TO THE MOST SPECIAL PERSON</p>
+
+        <h1>Happy Birthday<br><span>Husband</span></h1>
+
+        <p class="hero-text" id="typingText"></p>
+
+        <div class="hero-heart">♡</div>
+
+        <a href="#memories" class="main-btn">
+          Our Little World ↓
+        </a>
+      </div>
+
+      <div class="scroll-note">SCROLL DOWN WITH LOVE</div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="section memories" id="memories">
+      <p class="eyebrow">EVERY MOMENT MATTERS</p>
+
+      <h2>Our Little <span>Memories</span></h2>
+
+      <p class="section-description">
+        Some moments become memories. Some people become home.
+      </p>
+
+      <div class="gallery">
+        <figure class="photo-card">
+          <img src="photo1.jpg" alt="Our memory one">
+          <figcaption>My favourite person ♡</figcaption>
+        </figure>
+
+        <figure class="photo-card">
+          <img src="photo2.jpg" alt="Our memory two">
+          <figcaption>My happiest moments</figcaption>
+        </figure>
+
+        <figure class="photo-card">
+          <img src="photo3.jpg" alt="Our memory three">
+          <figcaption>Always you, my love</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Love Letter -->
+    <section class="section letter-section" id="letter">
+      <p class="eyebrow">WORDS FROM MY HEART</p>
+
+      <h2>A Letter For <span>You</span></h2>
+
+      <div class="letter-card">
+        <div class="letter-icon">💌</div>
+
+        <p class="letter-to">To my favourite human,</p>
+
+        <p class="letter-preview">
+          There are so many things I want to tell you...
+        </p>
+
+        <button class="outline-btn" id="letterBtn">
+          Open My Letter ♡
+        </button>
+      </div>
+    </section>
+
+    <!-- Background Music -->
+    <section class="section music-section" id="music">
+      <div class="music-disc" id="musicDisc">♫</div>
+
+      <p class="eyebrow">A LITTLE SONG FOR YOU</p>
+
+      <h2>Our Kind of <span>Love</span></h2>
+
+      <p class="section-description">
+        A song, a memory, a little piece of us.
+      </p>
+
+      <audio
+        id="loveSong"
+        src="our-song.mp3"
+        loop
+        preload="auto">
+      </audio>
+
+      <button class="main-btn" id="musicBtn">
+        ▶ Play Our Song
+      </button>
+
+      <p class="music-note" id="musicStatus">
+        Your special song is waiting ♡
+      </p>
+    </section>
+
+    <!-- Final Surprise -->
+    <section class="section surprise-section" id="surprise">
+      <div class="gift-icon">🎁</div>
+
+      <p class="eyebrow">ONE LAST LITTLE THING</p>
+
+      <h2>Something Just <span>For You</span></h2>
+
+      <p class="section-description">
+        I saved one more little proposal. Are you ready?
+      </p>
+
+      <button class="main-btn" id="surpriseBtn">
+        Reveal My Proposal ♡
+      </button>
+
+      <div class="surprise-message hidden" id="surpriseMessage">
+        <div class="big-heart">❤️</div>
+
+        <h3>You Are My Favourite Person</h3>
+
+        <p>
+          In every version of my life, I would still wish
+          to find you, Love you, Kiss you and Hug you. Will you marry me, Sweetheart?
+        </p>
+
+        <p class="signature">Forever yours ♡</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-heart">♡</div>
+
+      <p>Made with love, only for you.</p>
+
+      <small>Happy Birthday, My Love ❤️</small>
+    </footer>
+
+  </main>
+
+  <!-- Love Letter Popup -->
+  <div class="modal hidden" id="letterModal">
+    <div class="modal-card">
+
+      <button
+        class="close-btn"
+        id="closeLetter"
+        aria-label="Close letter">
+        ×
+      </button>
+
+      <div class="letter-icon">💌</div>
+
+      <p class="letter-to">My dearest love,</p>
+
+      <div class="full-letter">
+Happy Birthday to the person who makes my world a little softer and a lot more beautiful.
+
+Thank you for being part of my life, for the little moments, the smiles, and all the memories we share.
+
+I may not always find the perfect words to express what you mean to me, but I hope you always feel how deeply you are loved.
+
+May this new year of your life bring you happiness, peace, success, and everything your heart wishes for.
+
+Today is your day, but having you in my life feels like a gift to me every single day.
+
+Happy Birthday, my dearest cutest sweetie honey. ❤️
+      </div>
+
+      <p class="signature">With all my love, ♡</p>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
